@@ -1,6 +1,5 @@
 import streamlit as st
 from PIL import Image
-import os
 from pathlib import Path
 import io
 from google.cloud import vision
@@ -13,6 +12,11 @@ from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
 from PyPDF2 import PdfMerger
 import json
+
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # Initialize
 translator = Translator()
